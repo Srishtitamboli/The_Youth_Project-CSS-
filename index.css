@@ -1,0 +1,139 @@
+body{
+    background-color:lightblue;
+}
+
+#header{
+    background-color:dodgerblue ;
+    
+        width:100%;
+        height:100px;
+        
+        color: white;
+        display: flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items: center;
+    
+}
+
+#divTyp{
+    background-color:lightblue;
+    width: 77px;
+    height: 60px;
+    
+    margin-left: 7px;
+}
+
+#headerlinks{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7px;
+}
+#headerlinks>a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+a:hover{
+    background-color: navy;
+}
+
+#content{
+    background-color:salmon;
+    width: 80%;
+    height: max-content;
+    border: 10px solid white;
+    border-radius: 20px 20px 20px 20px;
+    transition-duration: 1000ms;
+    transition-property:background-color,transfrorm ;
+}
+#content:hover{
+    background-color: dodgerblue;
+    transform:rotateY(45deg);
+}
+
+#date{
+    background-color: whitesmoke;
+    font-weight: bold;
+    align-items: center;
+    
+}
+ 
+#head{
+    width: 75%;
+    height: max-content;
+    background-color:lightsalmon;
+    border:10px solid antiquewhite;
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 10px;
+}
+
+#writingside{
+    width: 75%;
+    height: max-content;
+    border: 10px solid antiquewhite;
+    border-radius: 20px 20px 20px 20px ;
+    background-color:lightsalmon;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#poster{
+    width: 50%;
+    height: 100%;
+    margin-left: 7px;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    float: left;
+}
+
+#prewala{
+    font-size:50px;
+    font-weight: bolder;
+    color:black;
+    float: left;
+}
+
+#image{
+    float: right;
+    
+    transform: rotateZ(45deg);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    margin-right: 7px;
+}
+
+
+@media only screen and (max-width:800px){
+    #prewala{
+          font-size: 25px;
+    }
+    #image>img{
+        width:150px;
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    #prewala{
+        font-size:15px;
+    }
+    #image>img{
+        width:90px;
+        height:90px;
+    }
+
+}
+
+
+
+
